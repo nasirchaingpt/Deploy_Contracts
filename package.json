@@ -6,8 +6,7 @@
   "homepage": "https://nasirchaingpt.github.io/Deploy_Contracts/",
   "scripts": {
     "compile": "hardhat compile",
-     "predeploy": "tsc --noEmit && vite build",
-  "deploy": "gh-pages -d dist",
+    "deploy": "npm run build && node scripts/verify-dist-for-pages.mjs && gh-pages -d dist --dotfiles",
     "prebuild": "hardhat compile && node scripts/copy-artifact.mjs",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
