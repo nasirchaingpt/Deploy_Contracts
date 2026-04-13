@@ -42,6 +42,7 @@ function chainLabel(chainId: bigint): string {
     11155111: "Sepolia",
     17000: "Holesky",
     31337: "Hardhat / Anvil",
+    97: "Bsc Testnet",
   };
   return names[id] ?? `Chain ${id}`;
 }
