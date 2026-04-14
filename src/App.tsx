@@ -40,9 +40,21 @@ function chainLabel(chainId: bigint): string {
     8453: "Base",
     84532: "Base Sepolia",
     11155111: "Sepolia",
-    17000: "Holesky",
-    31337: "Hardhat / Anvil",
     97: "Bsc Testnet",
+    56: "Bsc Mainnet",
+    137: "Polygon Mainnet",
+    80001: "Polygon Mumbai",
+    42161: "Arbitrum One",
+    421613: "Arbitrum Sepolia",
+    421614: "Arbitrum Goerli",
+    43114: "Avalanche Mainnet",
+    43113: "Avalanche Testnet",
+    43115: "Avalanche Fuji Testnet",
+    43116: "Avalanche C-Chain",
+    
+    
+
+  
   };
   return names[id] ?? `Chain ${id}`;
 }
